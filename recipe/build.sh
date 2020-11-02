@@ -14,7 +14,6 @@ unset SUBDIR
         --enable-hardcoded-tables \
         --enable-libfreetype \
         --enable-libopenh264 \
-        --enable-libx264 \
         --enable-pic \
         --enable-pthreads \
         --enable-shared \

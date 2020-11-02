@@ -37,7 +37,6 @@ requirements:
     - freetype  # [not win]
     - gnutls  # [not win]
     - libiconv  # [not win]
-    - x264  # [not win]
     - zlib  # [not win]
     - openh264  # [not win]
     - lame  # [not win]
@@ -57,7 +56,6 @@ test:
     - ffmpeg -loglevel panic -codecs | grep "libmp3lame"  # [not win]
     - ffmpeg -loglevel panic -codecs | grep "DEVI.S zlib"  # [unix]
     - ffmpeg -loglevel panic -codecs | grep "DEV.LS h264"  # [unix]
-    - ffmpeg -loglevel panic -codecs | grep "libx264"  # [unix]
     - ffmpeg -loglevel panic -codecs | grep "libopenh264"  # [unix]
     # Verify dynamic libraries on all systems
     {% set ffmpeg_libs = [
